@@ -64,17 +64,19 @@ printf("%f\n", *f_ptr3);
 
 int number[5] = {4,5,2,7,1};
 
-int* myptr = &number[2];
+int* myptr = &number[0];
 printf("\n%p\n", myptr);
+printf("%d\n\n", *(number+4));
 
-printf("%lu\n", sizeof(number));
+*(number + 1) = 8;
 
 
+for(int i = 0; i < 5; i++){
+    printf("%d\n", *(number + i));
+}
 
 
-int myint;
-
-printf("%d", sizeof(myint));
+printf("\n%lu\n", sizeof(number));
 
 
 
