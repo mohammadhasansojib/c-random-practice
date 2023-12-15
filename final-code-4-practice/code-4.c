@@ -14,9 +14,8 @@ int armstrong(int num){
     int arr[n];
 
     for(int i = n-1; i >= 0; i--){
-        int arr_elements = num_2%10;
+        arr[i] = num_2%10;
         num_2 /= 10;
-        arr[i] = arr_elements;
     }
 
 
