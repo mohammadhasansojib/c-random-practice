@@ -20,16 +20,14 @@ int main(){
 
     for(int i = 0; i < len; i++){
         if((arr1[i]%2) == 0){
-            arr1[ic] = arr1[i];
-            ic++;
+            arr1[ic++] = arr1[i];
         }
     }
 
 
     for(int i = 0; i < len; i++){
         if((arr2[i]%2) != 0){
-            arr1[ic] = arr2[i];
-            ic++;
+            arr1[ic++] = arr2[i];
         }
     }
 
