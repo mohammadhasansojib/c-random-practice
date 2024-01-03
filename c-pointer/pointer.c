@@ -2,10 +2,43 @@
 
 int main(){
 
+    int x = 5;
 
-    int a = 40;
+    int *ptr;
 
-    printf("%d", sizeof(a));
+    ptr = &x;
+
+    printf("%d %d", ptr+1, &ptr);
+    printf("\n%d %d", sizeof(ptr),sizeof(x));
+
+    int y = 10;
+
+    int *p1;
+    p1 = &y;
+    *p1 = 15;
+
+    printf("\n%d", y);
+
+    int z;
+
+    int *p2;
+    p2 = p1;
+
+    printf("\n%d", *p2);
+
+
+//    while(p1 < ptr){
+//        printf("\nhello");
+//        p1++;
+//    }
+
+    if(ptr < p1){
+        printf("\n\n%d", 1);
+    }else if(p1 > ptr){
+        printf("\n\n%d", 0);
+    }
+
+
 
     return 0;
 }
