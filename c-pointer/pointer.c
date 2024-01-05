@@ -38,6 +38,14 @@ int main(){
         printf("\n\n%d", 0);
     }
 
+    int i = 20;
+
+    int *p;
+    p = &i;
+
+    printf("\n%d %d", *p,*(&i));
+    printf("\n%p", &i);
+
 
 
     return 0;
