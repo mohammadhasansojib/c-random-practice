@@ -23,5 +23,13 @@ int main(){
     myFun(x);
 
 
+    int arr[] = {54,36,37,93,43};
+    int *q1 = &arr[1], *q2 = &arr[4];
+
+    printf("\n%d", q2 <= q1);
+    printf("\n%d", q2 - q1);
+    printf("\n%d", q2 - 2);
+
+
     return 0;
 }
